@@ -39,7 +39,7 @@ func (solver *Solver) Solve() (*Response, error) {
 
 	// Send a request to the solver
 	resp, err := http.Post(
-		"https://captcha-api.slave-auction.shop/solve/fc",
+		"https://api.dort.shop/captcha/solve/fc",
 		"application/json", bytes.NewBuffer(jsonData))
 	if err != nil {
 		return nil, err
